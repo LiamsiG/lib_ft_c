@@ -14,7 +14,7 @@ void * ft_memalloc(size_t size)
 
 	if ( i < size ) 
 	{
-		allocate = malloc((size) * sizeof (size_t));
+		allocate = malloc((size+1) * sizeof (size_t));
 
 		while ( i < size ) 
 		{

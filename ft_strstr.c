@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 int	compare(const char *x, const char *y) 
 {
 	while ( *x && *y ) 

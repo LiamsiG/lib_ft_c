@@ -1,4 +1,4 @@
-int	check(char c)
+int	ft_isdigit(char c)
 {
 	if ( c <= 0x39 ) 
 	{

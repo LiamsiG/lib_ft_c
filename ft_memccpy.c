@@ -1,6 +1,3 @@
-#include <stdio.h>
-
-
 void	*ft_memccpy(void *dest, void *src, char c , int size )
 {
 	char	*dest_ = (char *) dest; 

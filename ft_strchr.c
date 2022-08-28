@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 char    *ft_strchr(const char *s, int c)
 {
 	int	i = 0; 
@@ -12,6 +14,9 @@ char    *ft_strchr(const char *s, int c)
 		i++;
 	}
                 if (!c)
+		{
 		return ((char *)(s + i));
-	return (NULL);
+		}
+		return 0;
+	
 }

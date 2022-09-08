@@ -1,24 +1,29 @@
-#include <stdio.h>
+// Lexicographical comparison between two strings 
 
-int	ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(char *str , char *str_1 ) 
 {
-	char	*str = (char *)s1;
-	char	*str_ = (char *)s2;
-	if ( str && str_ == NULL )
-		return 0;
-	int	count = 0;
-	int	count_ = 0;
-	while ( str[count] != '\0' ) 
-	{
-		count++;
+	int	count_str;
+   	int	count_str1;
 
-	}
-	while ( str_[count_] != '\0' ) 
+	while ( *str && *str_1 != '\0' ) 
 	{
-		count_++;
+		if ( *str < *str_1 ) 
+		{
+			count_str1++;
+		}
+		if ( *str > *str_1 ) 
+		{
+			count_str++;
+		}
+		str++;
+		str_1++;
 	}
-	if ( count < count_ )
-	return 1;
+	if ( count_str < count_str1 ) 
+	{
+		return 0;
+	}
 	else 
-	return 0;
-}	
+	{
+		return 1;
+	}
+}
